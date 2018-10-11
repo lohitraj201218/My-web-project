@@ -1,0 +1,425 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+body {
+ line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+ display:block;
+}
+
+nav ul {
+ list-style:none;
+}
+
+blockquote, q {
+ quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+ content:'';
+ content:none;
+}
+
+a {
+ margin:0;
+ padding:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+ background-color:#ff9;
+ color:#000;
+ text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+ background-color:#ff9;
+ color:#000; 
+ font-style:italic;
+ font-weight:bold;
+}
+
+del {
+ text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+ border-bottom:1px dotted;
+ cursor:help;
+}
+
+table {
+ border-collapse:collapse;
+ border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+ display:block;
+ height:1px;
+ border:0; 
+ border-top:1px solid #cccccc;
+ margin:1em 0;
+ padding:0;
+}
+
+input, select {
+ vertical-align:middle;
+}
+
+/*My code*/
+
+/*sign up css*/
+
+*{
+	text-decoration: none;
+}
+
+/*body{
+	background-color: #f3f3f3;
+}*/
+
+main{
+	padding-top:100px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	right:0;
+	left:0;
+	background-color: #fff;
+	width: 100%;
+	height: 100px;
+}
+
+header .header-logo{
+	font-family: Catamaran;
+	font-size: 24px;
+	font-weight: 900;
+	color: #111;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	text-align:center;
+	padding: 20px 0;
+}
+
+header nav ul{
+	display: block;
+	margin: 0 auto;
+	width: fit-content;
+}
+header nav ul li{
+	display: inline-block;
+	float: left;
+	list-style:none;
+	padding: 0 16px;
+}
+header nav ul li a{
+	font-family: Catamaran;
+	font-size: 16px;
+	color: #111;
+	text-transform:uppercase;
+}
+
+header .sign-in{
+	display:none;
+}
+
+@media only screen and (min-width: 1000px){   /*only has to specify what need to be changed*/
+	header .header-logo{
+	margin: 30px 20px;
+	text-align:left;
+	line-height: 40px;
+	padding: 0 20px 0 40px;
+	border-right: 3px solid #111;
+	float : left;
+	}
+	
+	
+header nav ul{
+	margin: 20px 0px 0px 20px;
+	float: left;	
+}
+header nav ul li{
+}
+header nav ul li a{
+	font-size: 18px;
+	line-height:60px;
+	
+}
+
+
+header .sign-in{
+	display: block;
+	font-family: Catamaran;
+	font-size: 18px;
+	color: #111;
+	text-transform:uppercase;
+	line-height:40px;
+	border: 1px solid #111;
+	float: right;
+	margin-right: 40px;
+	padding: 0 20px;
+	margin-top: 28px;
+}
+
+
+}
+/*Login Page*/
+.loginPage{
+	width: 50%;
+	position: center;
+	padding-left:100px;
+
+}
+
+
+/*Index*/
+ .banner{
+	width: 100%;
+	height: calc(100vh-100px);
+	background-image: url('banner2.jpg');	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+
+.vertical-center{				/*This is for aligning text to center*/
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.banner h2{
+	font-family: Catamaran;
+	font-size: 60px;
+	font-weight: 900;
+	text-shadow: 2px 2px 8px #111; /*2px 2px is height,width and 8px is blur and #111 is color*/
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+
+}
+.banner h1{
+	font-family: Cormorant Garamond;
+	font-size: 28px;
+	font-weight: 200;
+	text-shadow: 2px 2px 8px #111; /*2px 2px is height,width and 8px is blur and #111 is color*/
+	color: #fff;
+	font-style:italic;
+	text-align: center;
+	line-height: 35px;
+}
+
+.index-links div{				/*styling for all div's in section2*/
+	margin: 15px 15px 0;
+	width: calc(100%-30px);
+	height: 100px;
+	background-color: #f2f2f2;
+}
+
+
+.index-links div h3{
+	font-family: Catamaran;
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	text-align: center;
+	line-height: 100px;
+	text-transform: uppercase;
+	
+}
+
+
+
+@media only screen and (min-width: 1000px){		/*only has to specify what need to be changed*/
+	.wrapper{
+		width: 1000px;
+		margin:0 auto;
+		
+	}
+	
+	.banner{
+	width: 100%;
+	height: 500px;
+	background-image: url('banner.jpg');	
+	background-size: 80%;  /*u can change it to cover*/
+}
+
+.banner h1{
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+}
+.index-links {				
+	
+	overflow: hidden;
+	padding-left: 100px;
+}
+.index-links div{				/*styling for all div's in section2*/
+	margin: 20px 10px 0;
+	height: 230px;
+	background-color: #f2f2f2;
+	float: left;
+}
+
+.index-boxlink-square{
+	/*width: calc(50%-20px) !important;*/
+	width: 40%;
+	
+}
+.index-boxlink-rectangle{
+	/*width: calc(50%-20px) !important;*/
+	width: 40%;
+	
+}
+.index-links div h3{
+	line-height: 230px;
+}
+
+
+}
+
+/*Items*/
+.Items-links{
+	overflow: hidden;
+	margin-bottom:20px;
+}
+.Items-links h2{
+	font-family: Catamaran;
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	text-transform: uppercase;	
+}
+.Items-links .Item-link p{
+	padding-top:45%;
+	font-family: Catamaran;
+	font-size: 24px;
+	font-weight: 600;
+	color: #111;
+	text-align:center;
+	text-transform: uppercase;	
+}
+.Items-links .Item-link{
+	float: left;
+	width:230px;
+	height:230px;
+	margin: 20px 10px 0px;
+	background-color: #e3e3e3;
+}
+/*Item*/
+.Item h2{
+	font-family: Catamaran;
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	text-align: center;
+	text-transform: uppercase;	
+}
+.Item img{
+	display: block;
+	margin: 0 auto;	
+	padding: 30px 0;
+}
+
+.Item .wrapper article{
+	font-family: Catamaran;
+	font-size: 20px;
+	font-weight: 600;
+	color: #111;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+
+
+/*Footer*/
+
+footer{
+	width:calc(100%-80px);
+	padding: 40px 40px;
+	background-color: #111;
+	margin-top: 20px;
+	overflow: hidden;
+}
+footer ul{
+	width: fit-content;
+	float: left;
+	padding-left: 20px;
+	
+}
+
+footer ul li{
+	display: block;
+	
+	list-style:none;
+	
+}
+
+footer ul li a{
+	font-family: Catamaran;
+	font-size: 24px;
+	color: #fff;
+	line-height: 40px;
+	
+}
+.footer-links-sm{
+	display: none;
+}
+
+.footer-sm{
+	width: 50px;
+	float: right;
+}
+
+.footer-sm img{
+	width: 100%;
+	margin-bottom: 10px; 
+}
+
+@media only screen and (min-width: 1000px){
+	.footer-links-sm{
+	display: block;
+	padding-top: 25px;
+}
+footer ul li a{
+	text-transform:uppercase;
+}
+
+footer ul{
+
+	padding-right: 30px;
+	
+}
+
+}
